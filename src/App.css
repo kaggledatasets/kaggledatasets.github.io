@@ -22,7 +22,7 @@ a:hover {
     background-color: #20beff;
     border-color: #00a7ec;
 }
-.bg-kd {
+.bg-kd, .card {
     background-color: white;
     -webkit-box-shadow: 0 4px 12px 0 rgba(0,0,0,.05) !important;
     box-shadow: 0 4px 12px 0 rgba(0,0,0,.05) !important;
@@ -35,4 +35,13 @@ a:hover {
 }
 bold, strong {
     font-weight: bold;
+}
+.download-menu {
+    border-left: 2px solid #aaa;
+}
+.download-menu-option {
+    background-color: white;
+}
+.logo-x {
+    width: 1.24rem;
 }
