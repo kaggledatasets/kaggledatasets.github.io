@@ -8,7 +8,6 @@ import {
 import Features from './pages/Features';
 import GetStarted from './pages/GetStarted';
 import Resources from './pages/Resources';
-import Docs from './pages/Docs';
 import Landing from './pages/Landing';
 import Footer from './components/Footer';
 import Header from './components/Header';
@@ -30,16 +29,13 @@ function App() {
                         <Route exact path="/resources">
                             <Resources />
                         </Route>
-                        <Route exact path="/docs">
-                            <Docs />
-                        </Route>
                         <Route exact path="/">
                             <Landing />
                         </Route>
                         <Error />
                     </Switch>
+                    <Footer />
                 </div>
-                <Footer />
             </Router>
         </>
     );

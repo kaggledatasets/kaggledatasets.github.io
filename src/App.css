@@ -30,3 +30,9 @@ a:hover {
 .active {
     font-weight: bold;
 }
+.text-kd {
+    color: #20beff;
+}
+bold, strong {
+    font-weight: bold;
+}

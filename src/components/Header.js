@@ -31,7 +31,7 @@ class Header extends Component {
                             <Link to="/get-started" className="nav-link">Get Started</Link>
                         </li>
                         <li className={"nav-item " + this.getState("docs")}>
-                            <Link to="/docs" className="nav-link">Docs</Link>
+                            <Link to="https://kaggledatasets.readthedocs.org" className="nav-link">Docs</Link>
                         </li>
                         <li className={"nav-item " + this.getState("resources")}>
                             <Link to="/resources" className="nav-link">Resources</Link>
