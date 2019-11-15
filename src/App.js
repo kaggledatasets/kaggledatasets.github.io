@@ -18,8 +18,8 @@ function App() {
     return (
         <>
             <Router>
+                <Header />
                 <div className="container-fluid">
-                    <Header />
                     <Switch>
                         <Route exact path="/features">
                             <Features />
@@ -38,8 +38,8 @@ function App() {
                         </Route>
                         <Error />
                     </Switch>
-                    <Footer />
                 </div>
+                <Footer />
             </Router>
         </>
     );
