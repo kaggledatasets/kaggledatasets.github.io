@@ -30,8 +30,11 @@ class Header extends Component {
                         <li className={"nav-item " + this.getState("get-started")}>
                             <Link to="/get-started" className="nav-link">Get Started</Link>
                         </li>
+                        <li className={"nav-item " + this.getState("features")}>
+                            <Link to="/features" className="nav-link">Features</Link>
+                        </li>
                         <li className={"nav-item " + this.getState("docs")}>
-                            <Link to="https://kaggledatasets.readthedocs.org" className="nav-link">Docs</Link>
+                            <a href="https://kaggledatasets.readthedocs.org" className="nav-link">Docs</a>
                         </li>
                         <li className={"nav-item " + this.getState("resources")}>
                             <Link to="/resources" className="nav-link">Resources</Link>
@@ -40,10 +43,6 @@ class Header extends Component {
                             <a href="https://github.com/kaggledatasets/kaggledatasets" target="_blank" rel="noopener noreferrer" className="nav-link">GitHub</a>
                         </li>
                     </ul>
-                    <form className="form-inline my-2 my-lg-0">
-                        <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
-                        <button className="btn btn-outline-kd my-2 my-sm-0" type="submit">Search</button>
-                    </form>
                 </div>
             </nav>
         )

@@ -3,7 +3,47 @@ import React, {Component} from 'react';
 class Resources extends Component {
     render() {
         return (
-            <h1 align="center">Resources</h1>
+            <>
+                <div className="row py-5 justify-content-center">
+                    <div className="col-lg-10 col-md-12">
+                        <h1>RESOURCES</h1>
+                        <p className="text-muted">
+                            Explore tutorials and other content, get your questions answered, 
+                            and join the discussion with other developers.
+                        </p>
+                    </div>
+                </div>
+                <div className="row pb-5 justify-content-center">
+                    <div className="col-lg-10 col-md-12">
+                        <div className="card-columns">
+                            <div className="card card-logo card-github p-2">
+                                <a href="">
+                                    <div className="card-body">
+                                        <h5 className="card-title text-dark">GitHub</h5>
+                                        <p className="card-text text-muted">Report bugs, request features, discuss issues, and more.</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div className="card card-logo card-kd p-2">
+                                <a href="">
+                                    <div className="card-body">
+                                        <h5 className="card-title text-dark">Docs</h5>
+                                        <p className="card-text text-muted">Access comprehensive developer documentation.</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div className="card card-logo card-slack p-2">
+                                <a href="">
+                                    <div className="card-body">
+                                        <h5 className="card-title text-dark">Slack</h5>
+                                        <p className="card-text text-muted">Discuss advanced topics. Request access: https://bit.ly/kdslack</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+            </>
         )
     }
 }
