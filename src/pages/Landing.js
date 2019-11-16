@@ -23,12 +23,12 @@ class Landing extends Component {
                 </div>
                 <QuickStart frameworks={true} />
                 <div className="row p-5 justify-content-center text-center">
-                    <div className="col-lg-4 col-sm-12">
+                    <div className="col-lg-4 col-sm-12 my-3">
                         <h5>Docs</h5>
                         <p className="text-muted">Access comprehensive developer documentation for kaggledatasets</p>
                         <Link to="/docs" className="pt-2">View Docs <span className="chevron">&rarr;</span></Link>
                     </div>
-                    <div className="col-lg-4 col-sm-12">
+                    <div className="col-lg-4 col-sm-12 my-3">
                         <h5>Resources</h5>
                         <p className="text-muted">Find development resources and get your questions answered</p>
                         <Link to="/resources" className="pt-2">View Resources <span className="chevron">&rarr;</span></Link>
