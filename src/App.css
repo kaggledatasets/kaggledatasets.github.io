@@ -113,3 +113,6 @@ pre .text-muted {
 .chevron {
     font-size: 120%;
 }
+.download-menu-option:hover {
+    cursor: pointer;
+}
