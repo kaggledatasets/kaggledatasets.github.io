@@ -16,24 +16,24 @@ class Resources extends Component {
                 <div className="row pb-5 justify-content-center">
                     <div className="col-lg-10 col-md-12">
                         <div className="card-columns">
-                            <div className="card card-logo card-github p-2">
-                                <a href="">
+                            <div className="card card-hover card-logo card-github p-2">
+                                <a href="https://github.com/kaggledatasets" target="_blank" rel="noopener noreferrer">
                                     <div className="card-body">
                                         <h5 className="card-title text-dark">GitHub</h5>
                                         <p className="card-text text-muted">Report bugs, request features, discuss issues, and more.</p>
                                     </div>
                                 </a>
                             </div>
-                            <div className="card card-logo card-kd p-2">
-                                <a href="">
+                            <div className="card card-hover card-logo card-kd p-2">
+                                <a href="https://kaggledatasets.readthedocs.org" target="_blank" rel="noopener noreferrer">
                                     <div className="card-body">
                                         <h5 className="card-title text-dark">Docs</h5>
                                         <p className="card-text text-muted">Access comprehensive developer documentation.</p>
                                     </div>
                                 </a>
                             </div>
-                            <div className="card card-logo card-slack p-2">
-                                <a href="">
+                            <div className="card card-hover card-logo card-slack p-2">
+                                <a href="https://kaggledatasets.slack.com" target="_blank" rel="noopener noreferrer">
                                     <div className="card-body">
                                         <h5 className="card-title text-dark">Slack</h5>
                                         <p className="card-text text-muted">Discuss advanced topics. Request access: https://bit.ly/kdslack</p>

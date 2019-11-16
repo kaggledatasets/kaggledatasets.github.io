@@ -23,6 +23,7 @@ a:hover {
     border-color: #00a7ec;
 }
 .bg-kd, .card, .btn {
+    border: 1px solid rgba(0,0,0,.05) !important;
     background-color: white;
     -webkit-box-shadow: 1px 4px 12px 0 rgba(0,0,0,.05) !important;
     box-shadow: 1px 4px 12px 0 rgba(0,0,0,.05) !important;
@@ -104,4 +105,11 @@ pre .text-muted {
     left: 24px;
     top: 24px;
     background-image: url('http://localhost:3000/images/logo_slack.png');
+}
+.card-hover:hover {
+    -webkit-box-shadow: 1px 1px 3px 0 rgba(0,0,0,.05) !important;
+    box-shadow: 1px 1px 3px 0 rgba(0,0,0,.05) !important;
+}
+.chevron {
+    font-size: 120%;
 }

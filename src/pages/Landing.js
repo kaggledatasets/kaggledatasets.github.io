@@ -15,20 +15,23 @@ class Landing extends Component {
                             Collection of <span className="text-kd">Kaggle Datasets</span> ready to use for Everyone
                         </h2>
                         <p>
-                            <Link to="/get-started" className="btn btn-kd">Get Started</Link>
+                            <Link to="/get-started" className="btn btn-kd">
+                                Get Started  
+                            </Link>
                         </p>    
                     </div>
                 </div>
                 <QuickStart frameworks={true} />
-                <div className="row p-5">
+                <div className="row p-5 justify-content-center text-center">
                     <div className="col-lg-4 col-sm-12">
-
+                        <h5>Docs</h5>
+                        <p className="text-muted">Access comprehensive developer documentation for kaggledatasets</p>
+                        <Link to="/docs" className="pt-2">View Docs <span className="chevron">&rarr;</span></Link>
                     </div>
                     <div className="col-lg-4 col-sm-12">
-                        
-                    </div>
-                    <div className="col-lg-4 col-sm-12">
-                        
+                        <h5>Resources</h5>
+                        <p className="text-muted">Find development resources and get your questions answered</p>
+                        <Link to="/resources" className="pt-2">View Resources <span className="chevron">&rarr;</span></Link>
                     </div>
                 </div>
             </>
