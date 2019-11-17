@@ -1,17 +1,19 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 import PropTypes from 'prop-types';
-import getOS from '../utils/utils';
+import {getOS, getPipInfo} from '../utils/utils';
 
 class QuickStart extends Component {
     constructor(props) {
         super(props);
         this.state = {
+            wheelLink: null,
             pkg: 'pip',
             os: getOS(),
-            build: '0.1.0'
+            build: null
         }
     }
+
     updatePkg(value) {
         this.setState({pkg: value});
     }
@@ -19,13 +21,18 @@ class QuickStart extends Component {
         this.setState({os: value});
     }
     updateBuild(value) {
-        this.setState({build: value});
+        console.log(value);
+        // TODO: Handle nightly releases in future
     }
 
     static get propTypes() { 
         return { 
             frameworks: PropTypes.bool
         }; 
+    }
+
+    componentDidMount() {
+        getPipInfo().then(data => { this.setState({wheelLink: data.wheelLink, build: data.version}) });
     }
 
     getCommand() {
@@ -35,8 +42,16 @@ class QuickStart extends Component {
             return `# Follow instructions at this URL: https://github.com/${name}/${name}#from-source`
         }
         if (this.state.os === 'mac') {
-            return `${this.state.pkg} install ${name}==${this.state.build}${postfix}`;
-        } else if (this.state.os === 'linux' || this.state.os === 'windows') {
+            if (this.state.pkg === 'pip') {
+                return `${this.state.pkg} install ${name}==${this.state.build}${postfix}`;
+            }
+            return `${this.state.pkg} install ${name}${postfix}`;
+        } else if (this.state.os === 'linux') {
+            return `${this.state.pkg} install ${name}${postfix}`;
+        } else if (this.state.os === 'windows') {
+            if (this.state.pkg === 'pip') {
+                return `${this.state.pkg} install ${name}${postfix} -f ${this.state.wheelLink}`;
+            }
             return `${this.state.pkg} install ${name}${postfix}`;
         }
     }
@@ -61,8 +76,8 @@ class QuickStart extends Component {
                         </div>
                         <div className="col-lg-10 col-sm-12 mt-1">
                             <div className="row">
-                                <div className="col-lg-6 col-sm-12 px-1 pr-0" onClick={() => this.updateBuild('0.1.0')}>
-                                    <div className={this.state.build !== 'nightly' ? `${commonOptionClass} focus`:`${commonOptionClass}`}>Stable (0.1)</div>
+                                <div className="col-lg-6 col-sm-12 px-1 pr-0" onClick={() => this.updateBuild(this.state.build)}>
+                                    <div className={this.state.build !== 'nightly' ? `${commonOptionClass} focus`:`${commonOptionClass}`}>Stable ({this.state.build})</div>
                                 </div>
                                 <div className="col-lg-6 col-sm-12 px-1 pr-0" onClick={() => this.updateBuild('nightly')}>
                                     <div className={this.state.build === 'nightly' ? `${commonOptionClass} focus`:`${commonOptionClass}`}>Preview (Nightly)</div>
