@@ -153,6 +153,12 @@ class QuickStart extends Component {
                                 </div>
                                 <div className="card col-lg-12 logo-py m-1">
                                     <div className="card-body">
+                                        <img src="images/logo_keras.png" className="logo-x my-1 mx-2" alt="Keras" />
+                                        Keras
+                                    </div>
+                                </div>
+                                <div className="card col-lg-12 logo-py m-1">
+                                    <div className="card-body">
                                         <img src="images/logo_pytorch.png" className="logo-x my-1 mx-2" alt="PyTorch" />
                                         PyTorch
                                     </div>

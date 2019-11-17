@@ -12,7 +12,6 @@ class Footer extends Component {
                     <nav className="nav flex-column">
                         <Link to="/" className="nav-link active" href="#">kaggledatasets</Link>
                         <Link to="/get-started" className="nav-link" href="#">Get Started</Link>
-                        <Link to="/features" className="nav-link" href="#">Features</Link>
                         <a href="https://github.com/kaggledatasets/kaggledatasets/blob/master/CONTRIBUTING.md" target="_blank" rel="noopener noreferrer" className="nav-link">Contributing</a>
                     </nav>
                 </div>

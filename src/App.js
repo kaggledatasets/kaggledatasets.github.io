@@ -5,7 +5,6 @@ import {
     Switch,
     Route
 } from "react-router-dom";
-import Features from './pages/Features';
 import GetStarted from './pages/GetStarted';
 import Resources from './pages/Resources';
 import Landing from './pages/Landing';
@@ -20,9 +19,6 @@ function App() {
                 <Header />
                 <div className="container-fluid">
                     <Switch>
-                        <Route exact path="/features">
-                            <Features />
-                        </Route>
                         <Route exact path="/get-started">
                             <GetStarted />
                         </Route>

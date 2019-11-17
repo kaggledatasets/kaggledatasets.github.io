@@ -63,7 +63,8 @@ bold, strong {
     box-shadow: none !important;
 }
 .logo-x {
-    width: 1.24rem;
+    width: 1.52rem;
+    vertical-align: middle;
 }
 .card {
     border: none;

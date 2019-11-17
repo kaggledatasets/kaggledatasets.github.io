@@ -5,7 +5,7 @@ class Error extends Component {
         return (
             <>
                 <div className="row m-5">
-                    <div className="col-md-12 col-lg-6 py-3">
+                    <div className="col-md-6 col-lg-6 py-3">
                         <h1>
                             <bold style={{fontSize: "9.6rem"}}>404</bold>
                             <br />
@@ -14,7 +14,7 @@ class Error extends Component {
                             </span>
                         </h1>
                     </div>
-                    <div className="col-md-12 col-lg-6 d-none d-lg-block">
+                    <div className="col-md-6 col-lg-5 d-none d-md-block">
                         <img src="images/error.svg" className="p-5" width="100%" alt="Some error" />
                     </div>
                 </div>
