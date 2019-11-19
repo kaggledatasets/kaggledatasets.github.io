@@ -1,0 +1,25 @@
+title: Kaggle Datasets
+email: kaggledatasets@gmail.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Collection of Kaggle Datasets ready to use for Everyone
+baseurl: ""
+url: "https://kaggledatasets.github.io"
+twitter_username: KaggledDatasets
+github_username:  kaggledatasets
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

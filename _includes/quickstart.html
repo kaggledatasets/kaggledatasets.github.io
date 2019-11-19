@@ -1,0 +1,82 @@
+<div class="row py-5 px-2 bg-light justify-content-center">
+    <div class="col-lg-9">
+        <h4 class="pb-3">QUICK START LOCALLY</h4>Select your preferences and run the install command. Stable represents the most currently tested and supported version of kaggledatasets. This should be suitable for many users. Preview is available if you want the latest, not fully tested and supported, 1.0 builds that are generated nightly. Please ensure that you have met the prerequisites below (e.g., numpy), depending on your package manager. You can also install previous versions of kaggledatasets.
+        <div class="row py-5 px-3">
+            <div class="col-lg-2 col-sm-12 download-menu mt-1">
+                <div class="py-2">Build</div>
+            </div>
+            <div class="col-lg-10 col-sm-12 mt-1">
+                <div class="row">
+                    <div class="col-lg-6 col-sm-12 px-1 pr-0">
+                        <div class="download-menu-option py-2 px-3">Stable (0.1.2)</div>
+                    </div>
+                    <div class="col-lg-6 col-sm-12 px-1 pr-0">
+                        <div class="download-menu-option py-2 px-3">Preview (Nightly)</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-sm-12 download-menu mt-1">
+                <div class="py-2">Your OS</div>
+            </div>
+            <div class="col-lg-10 col-sm-12 mt-1">
+                <div class="row">
+                    <div class="col-lg-4 col-sm-12 px-1 pr-0">
+                        <div class="download-menu-option py-2 px-3">Linux</div>
+                    </div>
+                    <div class="col-lg-4 col-sm-12 px-1 pr-0">
+                        <div class="download-menu-option py-2 px-3">Mac</div>
+                    </div>
+                    <div class="col-lg-4 col-sm-12 px-1 pr-0">
+                        <div class="download-menu-option py-2 px-3">Windows</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-sm-12 download-menu mt-1">
+                <div class="py-2">Package</div>
+            </div>
+            <div class="col-lg-10 col-sm-12 mt-1">
+                <div class="row">
+                    <div class="col-lg-4 col-sm-12 px-1 pr-0">
+                        <div class="download-menu-option py-2 px-3">Conda</div>
+                    </div>
+                    <div class="col-lg-4 col-sm-12 px-1 pr-0">
+                        <div class="download-menu-option py-2 px-3">Pip</div>
+                    </div>
+                    <div class="col-lg-4 col-sm-12 px-1 pr-0">
+                        <div class="download-menu-option py-2 px-3">Source</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-sm-12 download-menu focus mt-1">
+                <div class="py-4">Run this command:</div>
+            </div>
+            <div class="col-lg-10 col-sm-12 mt-1">
+                <div class="row">
+                    <div class="col-lg-12 col-sm-12 px-1 pr-0">
+                        <div class="download-menu-option py-4 px-3"><code class="text-dark text-bold"># Download options will be available soon</code></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="pt-3"><a href="/get-started">Previous versions of kaggledatasets</a></p>
+    </div>
+    {% if local != "false" %}
+    <div class="col-lg-3">
+        <h4 class="pb-3">QUICK START WITH FRAMEWORKS</h4> {{ page.local }} Get up and running with kaggledatasets quickly through popular frameworks.
+        <div class="row p-3">
+            <div class="card col-lg-12 logo-sk m-1">
+                <div class="card-body"><img src="{{ "/static/images/logo_scikit_learn.png" }}" class="logo-x my-1 mx-2" alt="Scikit Learn">Scikit Learn</div>
+            </div>
+            <div class="card col-lg-12 logo-tf m-1">
+                <div class="card-body"><img src="{{ "/static/images/logo_tensorflow.png" }}" class="logo-x my-1 mx-2" alt="Tensorflow">Tensorflow</div>
+            </div>
+            <div class="card col-lg-12 logo-py m-1">
+                <div class="card-body"><img src="{{ "/static/images/logo_keras.png" }}" class="logo-x my-1 mx-2" alt="Keras">Keras</div>
+            </div>
+            <div class="card col-lg-12 logo-py m-1">
+                <div class="card-body"><img src="{{ "/static/images/logo_pytorch.png" }}" class="logo-x my-1 mx-2" alt="PyTorch">PyTorch</div>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+</div>
