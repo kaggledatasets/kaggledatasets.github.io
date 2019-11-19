@@ -40,6 +40,22 @@ class Resources extends Component {
                                     </div>
                                 </a>
                             </div>
+                            <div className="card card-hover card-logo card-kd p-2">
+                                <a href="https://kaggledatasets.readthedocs.org" target="_blank" rel="noopener noreferrer">
+                                    <div className="card-body">
+                                        <h5 className="card-title text-dark">Tutorials</h5>
+                                        <p className="card-text text-muted">Get in-depth tutorials for beginners and advanced developers.</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div className="card card-hover card-logo card-kd p-2">
+                                <a href="https://kaggledatasets.readthedocs.org" target="_blank" rel="noopener noreferrer">
+                                    <div className="card-body">
+                                        <h5 className="card-title text-dark">Examples</h5>
+                                        <p className="card-text text-muted">View example projects for datasets of structured, image or video.</p>
+                                    </div>
+                                </a>
+                            </div>
                         </div>  
                     </div>
                 </div>
