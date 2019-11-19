@@ -5,11 +5,12 @@ cache:
   directories:
   - node_modules
 script:
+  - npm run lint
   - npm run build
 deploy:
   provider: pages
   skip_cleanup: true
-  github_token: $GITHUB_TOKEN
+  github_token: $github_token
   local_dir: build
   target_branch: master
   keep_history: true
