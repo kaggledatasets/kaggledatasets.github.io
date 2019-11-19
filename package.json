@@ -33,7 +33,7 @@
   "bugs": {
     "url": "https://github.com/kaggledatasets/kaggledatasets.github.io/issues"
   },
-  "homepage": "https://kaggledatasets.github.io",
+  "homepage": "https://kaggledatasets.github.io/",
   "browserslist": {
     "production": [
       ">0.2%",

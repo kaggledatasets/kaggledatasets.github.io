@@ -15,7 +15,7 @@ import Error from './pages/Error';
 function App() {
     return (
         <>
-            <Router basename="/">
+            <Router basename={process.env.PUBLIC_URL}>
                 <Header />
                 <div className="container-fluid">
                     <Switch>
