@@ -15,7 +15,7 @@ import Error from './pages/Error';
 function App() {
     return (
         <>
-            <Router>
+            <Router basename="/">
                 <Header />
                 <div className="container-fluid">
                     <Switch>
