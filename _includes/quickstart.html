@@ -7,11 +7,11 @@
             </div>
             <div class="col-lg-10 col-sm-12 mt-1">
                 <div class="row">
-                    <div class="col-lg-6 col-sm-12 px-1 pr-0">
-                        <div class="download-menu-option py-2 px-3">Stable (0.1.2)</div>
+                    <div class="col-lg-6 col-sm-12 px-1 pr-0" onclick="updateBuild('stable')">
+                        <div class="download-menu-option py-2 px-3" id="build-stable">Stable</div>
                     </div>
-                    <div class="col-lg-6 col-sm-12 px-1 pr-0">
-                        <div class="download-menu-option py-2 px-3">Preview (Nightly)</div>
+                    <div class="col-lg-6 col-sm-12 px-1 pr-0" onclick="updateBuild('nightly')">
+                        <div class="download-menu-option py-2 px-3" id="build-nightly">Preview (Nightly)</div>
                     </div>
                 </div>
             </div>
@@ -20,14 +20,14 @@
             </div>
             <div class="col-lg-10 col-sm-12 mt-1">
                 <div class="row">
-                    <div class="col-lg-4 col-sm-12 px-1 pr-0">
-                        <div class="download-menu-option py-2 px-3">Linux</div>
+                    <div class="col-lg-4 col-sm-12 px-1 pr-0" onclick="updateOS('linux')">
+                        <div class="download-menu-option py-2 px-3" id="os-linux">Linux</div>
                     </div>
-                    <div class="col-lg-4 col-sm-12 px-1 pr-0">
-                        <div class="download-menu-option py-2 px-3">Mac</div>
+                    <div class="col-lg-4 col-sm-12 px-1 pr-0" onclick="updateOS('mac')">
+                        <div class="download-menu-option py-2 px-3" id="os-mac">Mac</div>
                     </div>
-                    <div class="col-lg-4 col-sm-12 px-1 pr-0">
-                        <div class="download-menu-option py-2 px-3">Windows</div>
+                    <div class="col-lg-4 col-sm-12 px-1 pr-0" onclick="updateOS('windows')">
+                        <div class="download-menu-option py-2 px-3" id="os-windows">Windows</div>
                     </div>
                 </div>
             </div>
@@ -36,14 +36,14 @@
             </div>
             <div class="col-lg-10 col-sm-12 mt-1">
                 <div class="row">
-                    <div class="col-lg-4 col-sm-12 px-1 pr-0">
-                        <div class="download-menu-option py-2 px-3">Conda</div>
+                    <div class="col-lg-4 col-sm-12 px-1 pr-0" onclick="updatePkg('conda')">
+                        <div class="download-menu-option py-2 px-3" id="pkg-conda">Conda</div>
                     </div>
-                    <div class="col-lg-4 col-sm-12 px-1 pr-0">
-                        <div class="download-menu-option py-2 px-3">Pip</div>
+                    <div class="col-lg-4 col-sm-12 px-1 pr-0" onclick="updatePkg('pip')">
+                        <div class="download-menu-option py-2 px-3" id="pkg-pip">Pip</div>
                     </div>
-                    <div class="col-lg-4 col-sm-12 px-1 pr-0">
-                        <div class="download-menu-option py-2 px-3">Source</div>
+                    <div class="col-lg-4 col-sm-12 px-1 pr-0" onclick="updatePkg('source')">
+                        <div class="download-menu-option py-2 px-3" id="pkg-source">Source</div>
                     </div>
                 </div>
             </div>
@@ -53,7 +53,7 @@
             <div class="col-lg-10 col-sm-12 mt-1">
                 <div class="row">
                     <div class="col-lg-12 col-sm-12 px-1 pr-0">
-                        <div class="download-menu-option py-4 px-3"><code class="text-dark text-bold"># Download options will be available soon</code></div>
+                        <div class="download-menu-option py-4 px-3"><code class="text-dark text-bold" id="code-snippet"># Download options will be available soon</code></div>
                     </div>
                 </div>
             </div>
