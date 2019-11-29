@@ -8,11 +8,61 @@ layout: default
 
 <div class="row justify-content-center py-5">
     <div class="col-lg-10 col-sm-12">
-        <h3 class="pb-2">Installing on Linux</h3>
-        <div class="bg-light"><pre class="p-3"><span class="text-pre text-muted"># if you are using pip</span><br>pip install kaggledatasets<br><br><span class="text-pre text-muted"># if you are using conda</span><br>conda install kaggledatasets</pre></div>
-        <h3 class="pb-2">Installing on macOS</h3>
-        <div class="bg-light"><pre class="p-3"><span class="text-pre text-muted"># if you are using pip</span><br>pip install kaggledatasets<br><br><span class="text-pre text-muted"># if you are using conda</span><br>conda install kaggledatasets</pre></div>
-        <h3 class="pb-2">Installing on Windows</h3>
-        <div class="bg-light"><pre class="p-3"><span class="text-pre text-muted"># if you are using pip</span><br>pip install kaggledatasets<br><br><span class="text-pre text-muted"># if you are using conda</span><br>conda install kaggledatasets</pre></div>
+        <h3 class="pb-2">INSTALLATION</h3>
+        <h4 class="pb-2">Anaconda</h4>
+        <div class="bg-light"><pre class="p-3">condia install kaggledatasets</pre></div>
+        <h4 class="pb-2">Pip</h4>
+        <div class="bg-light"><pre class="p-3">pip install kaggledatasets</pre></div>
+        <h4 class="pb-2">Source</h4>
+        <div class="bg-light"><pre class="p-3"><span class="text-muted"># get the kaggledatasets source</span>
+git clone --recursive https://github.com/kaggledatasets/kaggledatasets
+cd kaggledatasets
+
+<span class="text-muted"># install the dependencies</span>
+pip install -r requirements.txt
+
+<span class="text-muted"># install kaggledatasets</span>
+python setup.py install</pre></div>
+        <br>
+        <h3 class="pb-2">CONFIGURATION</h3>
+        <h5 class="pb-2">This package uses Kaggle API. API Credentials Guide available <a href="https://github.com/Kaggle/kaggle-api#api-credentials">here</a> or you can follow below given steps:</h5>
+        <ul>
+            <li>Sign up for a Kaggle account at <a href="https://www.kaggle.com">https://www.kaggle.com</a></li>
+            <li>Then go to the <span class="bg-light py-1 px-2 text-bold">Account</span> tab of your user profile (https://www.kaggle.com/&lt;username&gt;/account) and select <span class="bg-light py-1 px-2 text-bold">Create API Token</span></li>
+            <li>This will trigger the download of <span class="bg-light py-1 px-2 text-bold">kaggle.json</span>, a file containing your API credentials</li>
+            <li>
+                Setting up <span class="bg-light py-1 px-2 text-bold">kaggle.json</span>:
+            </li>
+            <ul>
+                <li>
+                    <b>Linux/macOS:</b>
+                    <br>
+                    Place this file in the location <span class="bg-light py-1 px-2 text-bold">~/.kaggle/kaggle.json</span>
+                    <br>
+                    For your security, ensure that other users of your computer do not have read access to your credentials. You can do this with the following command: <br>
+                    <span class="bg-light py-1 px-2 text-bold">chmod 600 ~/.kaggle/kaggle.json</span>
+                </li>
+                <li>
+                    <b>Windows:</b>
+                    <br>
+                    Place this file in the location <span class="bg-light py-1 px-2 text-bold">C:\Users\&lt;Windows-username&gt;\.kaggle\kaggle.json</span>
+                </li>
+            </ul>
+        </ul>
+        <br>
+        <h3 class="pb-2">USAGE</h3>
+        <div class="bg-light"><pre><code class="hljs python p-3">import kaggledatasets as kd
+
+heart_disease = kd.structured.HeartDiseaseUCI(download=True)
+
+# Returns the pandas data frame to be used in Scikit Learn or any other framework
+df = heart_disease.data_frame()
+
+# Returns the tensorflow dataset type compatible with TF 2.0
+dataset = heart_disease.load()
+for batch, label in dataset.take(1):
+    for key, value in batch.items():
+        ...
+</code></pre></div>
     </div>
 </div>
